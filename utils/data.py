@@ -87,7 +87,7 @@ class DHazyDataset(Dataset):
 
 def get_dataloaders(dataset, train_split, batch_size, tmap_gt=False):
     
-    data_dir = f"datasets/{dataset}/hazy"
+    data_dir = f"../datasets/{dataset}/hazy"
 
     if dataset == "ohaze":    
         dataset = OHazeDataset(data_dir)
